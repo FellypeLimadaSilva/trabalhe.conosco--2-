@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boa-ação | Trabalhe Conosco</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cardworks.css">
+
+</head>
+<body>
+  <div>
+    <button class="drawer-toggle" id="drawer-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <div class="empresa-info">
+      <img src="img/logo-boa-acao.png" alt="">
+      <p>Contatos:</p>
+      <ul>
+        <li>Telefone: (11) 1234-5678</li>
+        <li>E-mail: mailto:contato@boaacao.com.br</li>
+        <li>Endereço: Rua Exemplo, 123 - São Paulo, SP</li>
+      </ul>
+      <p>Como aceitar a vaga:</p>
+      <ul>
+        <li>Clique no botão "Aceitar" na página da vaga</li>
+        <li>Preencha o formulário de inscrição</li>
+        <li>Aguarde contato da nossa equipe para entrevista</li>
+      </ul>
+    </div>
+
+    <div class="drawer" id="drawer">
+      <div class="perfil">
+        <!-- Seção do perfil do usuário -->
+        <div>
+          <img id="user-photo" alt="Foto do usuário" style="height: 90px; width: auto; border-radius: 50%; margin-bottom: 10px;">
+          <h2 id="user-name"></h2>
+          <p id="user-position" style="font-size: 15px; color: black; border-bottom: solid 2px black;"></p>
+          <div>
+            <p style="margin: 0; color: black; font-weight: bold;">Experiência Profissional:</p>
+            <p id="user-experience" style="margin: 7px 0; color: black;"></p>
+          </div>
+          <div style="margin-top: 15px;">
+            <label class="form-label" style="font-weight: bold;">Disponibilidade de Horário:</label>
+            <div id="user-availability" style="margin-top: 5px; display: flex; flex-wrap: wrap; gap: 10px;">
+              <!-- Horários de disponibilidade serão adicionados aqui dinamicamente -->
+            </div>
+          </div>
+        </div>
+    
+        <!-- Seção de informações de contato -->
+        <div style="margin-top: 20px;">
+          <p id="user-email" style="color: black; font-weight: bold;"></p>
+          <p id="user-phone" style="color: black;"></p>
+          <p id="user-address" style="color: black;"></p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="img-bg">
+      <div class="vagas" id="vagas-container">
+        <!-- Os cards dos trabalhos serão renderizados aqui -->
+      </div>
+    </div>
+
+  <script src="index.js"></script>
+  <script src="drawer.js"></script>
+  <script src="cardworks.js"></script>
+</body>
+</html>

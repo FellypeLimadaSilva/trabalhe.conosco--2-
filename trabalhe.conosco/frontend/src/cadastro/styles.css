@@ -1,0 +1,49 @@
+header {
+    height: 80px;
+    background-color: rgb(181, 242, 215);
+}
+
+.container-login {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+.login-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: rgb(181, 242, 215);
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.logo {
+    animation: pulsar 1s ease-in-out infinite;
+}
+#logo {
+    width: 25%;
+    margin-left: 37%;
+    padding-bottom: 10px;
+}
+.bord {
+    border-bottom: 2px solid black;
+    width: 25%;
+    margin-left: 37%;
+    padding-bottom: 10px;
+}

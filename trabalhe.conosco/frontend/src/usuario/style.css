@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(244, 240, 240);
+    
+}
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(217, 246, 217);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Estilos para o botão de abrir/fechar o drawer */
+.drawer-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(191, 246, 191);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilos para o perfil do usuário */
+.perfil {
+  height: 100%;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.perfil h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.perfil p {
+  font-size: 14px;
+  color: #666;
+}
+
+.perfil div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilos para a seção de vagas de emprego */
+.vagas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 300px;
+  padding: 20px;
+  width: 70%;
+}
+
+.vaga {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vaga h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vaga p {
+  font-size: 14px;
+  color: #666;
+}
+
+.vaga button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.vaga button:hover {
+  background-color: #3e8e41;
+}
+
+/* Estilos para a modal de informações da vaga */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+.empresa-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(217, 246, 217);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empresa-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.empresa-info p {
+  font-size: 18px;
+  color: #666;
+}
+.empresa-info ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.empresa-info li {
+margin-bottom: 10px;
+}
+
+.empresa-info a {
+text-decoration: none;
+color: #337ab7;
+}
+
+.empresa-info a:hover {
+color: #23527c;
+}
+.cartao-aguardando {
+display: none; /* Adicione essa linha */
+background-color: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 80%;
+margin: 20px auto;
+text-align: center;
+}
+
+
+.cartao-aguardando h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.cartao-aguardando p {
+font-size: 14px;
+color: #666;
+}
+
+.cartao-aguardando button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+}
+
+#users-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 270px; /* Ajuste conforme necessário para evitar o drawer */
+  padding: 20px;
+  width: calc(88% - 200px); /* Ajuste conforme necessário para evitar o drawer */
+}
+#users-list {
+  display: flex;
+  flex-wrap: wrap;
+}
